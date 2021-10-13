@@ -1,0 +1,42 @@
+.accordion {
+  width: 100%;
+}
+
+.accordion__title {
+  width: 100%;
+  background-color: lightgrey;
+  height: 64px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 0 20px;
+  font-size: 24px;
+}
+
+.accordion__title:hover,
+.accordion__title--active {
+  background-color: grey;
+}
+
+.accordion__title:after {
+  content: "\002B";
+  color: #000;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion__title--active:after {
+  content: "\2212";
+}
+
+.accordion__content {
+  display: none;
+  padding: 0 20px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.accordion__content--active {
+  display: block;
+}
